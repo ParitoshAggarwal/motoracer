@@ -72,6 +72,34 @@ i=1.0;
         
     });
 
+    $('#caro1').click(function(){
+       document.getElementById('changecar').src="media/car.png";
+        $('#caro1 img').css('background-color','pink');
+        $('#caro2 img').css('background-color','transparent');
+        $('#caro3 img').css('background-color','transparent');
+        $('#caro4 img').css('background-color','transparent');
+    });
+    $('#caro2').click(function(){
+       document.getElementById('changecar').src="media/caro1.png";
+        $('#caro1 img').css('background-color','transparent');
+        $('#caro2 img').css('background-color','pink');
+        $('#caro3 img').css('background-color','transparent');
+        $('#caro4 img').css('background-color','transparent');
+    });
+    $('#caro3').click(function(){
+       document.getElementById('changecar').src="media/caro2.png";
+        $('#caro1 img').css('background-color','transparent');
+        $('#caro2 img').css('background-color','transparent');
+        $('#caro3 img').css('background-color','pink');
+        $('#caro4 img').css('background-color','transparent');
+    });
+    $('#caro4').click(function(){
+       document.getElementById('changecar').src="media/caro3.png";
+        $('#caro1 img').css('background-color','transparent');
+        $('#caro2 img').css('background-color','transparent');
+        $('#caro3 img').css('background-color','transparent');
+        $('#caro4 img').css('background-color','pink');
+    });
 
 
 
@@ -348,9 +376,15 @@ function game(level) {
         levelchoosen=level;
         if(target<= parseInt(score.text())){
             var restart_text = $('#restart_text');
-            restart_text.text("You Won The Game. Do You Want To Start New Game ?");
+            if(levelchoosen==3){
+                restart_text.text("You Won The Game. Do You Want To reply");
+                levelchoosen=1;
+            }else{
+                restart_text.text("You Won This Level. Do You Want To Jump to next level ?");
+                levelchoosen+=1;
+            }
         }else{
-              var xx = document.getElementById("car_crash_sound"); 
+            var xx = document.getElementById("car_crash_sound"); 
             xx.play();
             var restart_text = $('#restart_text');
             restart_text.text("Do You Want To Start New Game ?");

@@ -34,7 +34,7 @@ body {
 }
 
 
-#showinstructions,#showinstruction{
+#showinstructions,#showinstruction,#avataar{
 /*    background-color: cornsilk;*/
     color:bisque;
     text-align: center;
@@ -56,6 +56,27 @@ body {
     background-color: blue;
 }
 
+ul{
+    list-style: none;
+    margin-left: 27%;
+}
+ul li{
+    display: inline;
+    padding: 10px;
+}
+ul li img{
+    height: 62px;
+    width: 42px;
+    padding: 2px;
+}
+
+ul li img:hover{
+    background-color:cornsilk;
+}
+
+#caro1 img{
+    background-color: pink;
+}
 
 
 
