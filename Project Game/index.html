@@ -1,0 +1,102 @@
+<!DOCTYPE HTMl>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moto Racer</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+    
+<body>
+    <audio id="car_crash_sound">
+        <source src="media/Smashing.wav">
+    </audio>
+    <audio id="car_sound">
+        <source src="media/Car%20Driving-Sound.wav" loop>
+    </audio>
+    <a name="comeup"></a>
+    <div id="menu">
+        <button id="play">PLAY</button>
+        <div id="playlevel">
+            <a href="#comedown"><button id="level1">Level 1 (Beginner)</button></a><br>
+            <a href="#comedown"><button id="level2">Level 2 (Intermediate)</button></a><br>
+            <a href="#comedown"><button id="level3">Level 3 (Expert)</button></a><br>
+        </div>
+        <button id="instructions">INSTRUCTIONS</button>
+        <div id="showinstructions"><h3>Drive Around the road without hitting any other car.The more you survive the more points increase.Higher the level Higher the initial speed.A higher speed gives you a higher bounty.Just meet the target to win the game. Good Luck Drive Safe!!</h3><h3>&#x2191; Move Up<br>&nbsp;&nbsp; &#x2193; Move Down<br> &nbsp;&nbsp;&#x2190; Move Left<br>&nbsp;&nbsp; &#x2192; Move Right<br>&nbsp;&nbsp;&nbsp;&nbsp;X Increase Speed<br>&nbsp;&nbsp;&nbsp;&nbsp;Z Decrease Speed </h3><h3>Got A Knack Drive The Hack !</h3></div>
+        <button id="exit" >ABOUT</button>
+        <div id="showinstruction">Racing Game Developed For Project<br>Version 1.0</div>
+    </div>
+    
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+      <br><br><br><br>
+    <br><br><br><br>
+   <br>
+    
+    <div class="maingame">
+        <div id="target_div">
+            Target: <span id="target">0</span>
+        </div>
+        <div id="score_div">
+            Score: <span id="score">0</span>
+        </div>
+        <div id="speed_div">
+            Speed: <span id="speed">0</span>
+        </div>
+        <div id="container">
+
+            <div id="line_1" class="line"></div>
+            <div id="line_2" class="line"></div>
+            <div id="line_3" class="line"></div>
+            <div id="car" class="car">
+
+                <img src="media/car.png">
+            </div>
+            <div id="car_1" class="car">
+
+                <img src="media/car1.png">
+            </div>
+            <div id="car_2" class="car">
+
+                <img src="media/car2.png">
+            </div>
+            <div id="car_3" class="car">
+
+                <img src="media/car3.png">
+            </div>
+
+            <div id="car_4" class="car">
+                <img src="media/car4.png">
+            </div>  
+
+
+            <div id="restart_div">
+                <h2><span id="restart_text">Do You Want To Continue ?</span></h2>
+                <button id="yes">Yes</button>
+                <a href="#comeup"><button id="no">No</button></a>
+            </div>
+        </div>
+    </div>
+    <a name="comedown"></a>
+    
+    <br><br><br>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</body>
+    
+<script src="Lib/easeljs.js"></script>
+<script src="Lib/createjs.js"></script>
+
+    
